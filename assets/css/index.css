@@ -1,0 +1,204 @@
+main {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 8rem 0rem;
+}
+main img {
+  width: 100%;
+  border-radius: 10px;
+}
+main::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.6);
+  content: "";
+  z-index: 1;
+  display: none;
+}
+main .common_width {
+  position: relative;
+  z-index: 2;
+  color: #333;
+}
+main > div {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+main h1 {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 80px;
+}
+main h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+main p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+main a,
+.live_anywhere .button_wrapper a {
+  background-color: #333;
+  color: #fff;
+  width: 210px;
+  height: 55px;
+  border: #333;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.live_anywhere .button_wrapper a:hover,
+main a:hover {
+  text-decoration: underline;
+  background-color: #05345f;
+  text-underline-offset: 4px;
+}
+.live_anywhere .button_wrapper a:focus-visible,
+main a:focus-visible {
+  border: 3px dotted #fff;
+}
+.live_anywhere {
+  padding: 6rem 0rem;
+}
+.live_anywhere .common_width > h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 1rem;
+}
+.live_anywhere .common_width > h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+.live_anywhere .cards_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 4rem;
+}
+.live_anywhere .cards_wrapper img {
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+}
+.live_anywhere .cards_wrapper h1 {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.live_anywhere .button_wrapper {
+  grid-column: span 3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-left: 0rem;
+  margin-top: 3rem;
+}
+
+/* grid_home */
+.live_anywhere .grid_home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 2rem;
+  margin-top: 6rem;
+}
+.live_anywhere .grid_home h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.live_anywhere .grid_home .presentation_area > * + * {
+  margin-top: 2rem;
+}
+.live_anywhere .grid_home p {
+  font-size: 18px;
+}
+.live_anywhere .grid_home video {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.live_anywhere .badge {
+  padding: 3px 16px;
+  border-radius: 99px;
+  background-color: #333;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+}
+@media screen and (max-width: 1000px) {
+  main > div {
+    grid-template-columns: 1fr;
+  }
+  .live_anywhere .cards_wrapper,
+  .live_anywhere .grid_home {
+    grid-template-columns: 1fr;
+  }
+  .live_anywhere .button_wrapper {
+    grid-column: span 1;
+  }
+  .live_anywhere .cards_wrapper img {
+    height: unset;
+  }
+}
+@media screen and (max-width: 800px) {
+  main h1,
+  main h2,
+  main p {
+    text-align: center;
+  }
+  main .common_width > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main h1 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 650px) {
+  main h1 {
+    font-size: 40px;
+    line-height: unset;
+  }
+  main h2, main p {
+    font-size: 16px;
+  }
+  main a,
+  .live_anywhere .button_wrapper a {
+    font-size: 16px;
+    height: 40px;
+  }
+  .live_anywhere .common_width > h1 {
+    font-size: 30px;
+  }
+  .live_anywhere .common_width > h2 {
+    font-size: 16px;
+  }
+  .live_anywhere .grid_home h1 {
+    font-size: 25px;
+  }
+  .live_anywhere .grid_home p {
+    font-size: 16px;
+  }
+}

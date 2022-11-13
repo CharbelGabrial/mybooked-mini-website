@@ -1,0 +1,117 @@
+.location_wrapper {
+  padding-top: 4rem;
+}
+.location_wrapper video {
+  width: 100%;
+  margin-top: 2rem;
+}
+.location_wrapper .common_width > h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.location_wrapper .common_width > p {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+.cards_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+.cards_wrapper .card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  transition: 0.3s ease all;
+}
+.cards_wrapper .card:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 25px 2px rgb(28, 28, 28);
+}
+.cards_wrapper .card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cards_wrapper .card .presentation {
+  padding: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cards_wrapper .card h1 {
+  font-size: 20px;
+}
+.cards_wrapper .card p {
+  font-size: 17px;
+}
+.cards_wrapper .star_wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.cards_wrapper .star_wrapper svg {
+  fill: #f37f20;
+  width: 17px;
+}
+.cards_wrapper .star_wrapper > * + * {
+  margin-left: 1px;
+}
+.cards_wrapper .star_wrapper p {
+  font-size: 16px;
+  color: #000;
+  margin-left: 5px;
+}
+.card button {
+  background-color:#333;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+  margin: 20px 20px 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.card button:hover {
+  text-decoration: underline;
+  background-color: #05345f;
+  text-underline-offset: 4px;
+}
+.card button:focus-visible,
+main a:focus-visible {
+  border: 3px dotted #fff;
+}
+@media screen and (max-width: 1150px) {
+  .cards_wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 850px) {
+  .cards_wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 650px) {
+  .location_wrapper .common_width > p {
+    font-size: 16px;
+  }
+  .cards_wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 450px) {
+  .location_wrapper .common_width > h1 {
+    font-size: 25px;
+  }
+}

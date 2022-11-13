@@ -1,0 +1,223 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+nav,
+ul {
+  list-style: none;
+}
+.burger_menu {
+  display: none;
+}
+body,
+input,
+button,
+a,
+textarea,
+select {
+  font-family: "Nunito Sans", sans-serif;
+}
+footer {
+  background-color: rgb(244, 244, 244);
+}
+footer > div {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+footer > div p {
+  font-weight: 800;
+}
+footer > div a {
+  background-color: #333;
+  color: #fff;
+  width: 120px;
+  height: 45px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+footer .privacy-policy a {
+  background-color: transparent;
+  width: auto;
+  padding: 20px 0px;
+  color: #005799;
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+  text-decoration-skip-ink: none;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .privacy-policy a:hover {
+  background-color: transparent;
+  text-underline-offset: 4px;
+}
+footer .privacy-policy svg {
+  width: 20px;
+  margin-right: 5px;
+}
+footer > div a:hover {
+  text-decoration: underline;
+  background-color: #05345f;
+  text-underline-offset: 4px;
+}
+footer > div a:focus {
+border: 3px dotted #fff;
+}
+header > div,
+header > div ul {
+  display: flex;
+}
+header > div {
+  background-color: #fff;
+  align-items: center;
+  padding: 1.5rem 0rem;
+  justify-content: space-between;
+}
+header > div .brand_logo {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+header > div .brand_logo svg {
+  width: 40px;
+  margin-right: 15px;
+  fill: #2148aa;
+}
+header > div li {
+  display: flex;
+  align-items: center;
+}
+header > div ul > * + * {
+  margin-left: 2rem;
+}
+header > div li a {
+  color: #333;
+  font-size: 16px;
+}
+header > div li svg {
+  fill: #333;
+  width: 18px;
+  margin-right: 5px;
+}
+header > div ul a {
+  text-decoration: none;
+}
+header > div ul a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+header > div ul a:focus {
+  border: 2px dotted #333;
+  padding: 0px 1px;
+}
+header > div ul li {
+  padding: 0px 15px;
+}
+header ul li.active {
+  background-color: #60606022;
+  border-radius: 6px;
+}
+header ul li.active a {
+  color: #333;
+  font-weight: bold;
+}
+header ul li.active svg {
+  fill: #333;
+}
+.speech_wrapper button {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  width: 120px;
+  height: 45px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: 0.3s ease all;
+  font-size: 16px;
+  cursor: pointer;
+}
+.speech_wrapper button:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.speech_wrapper button:focus {
+  border: 2px dotted #333;
+  color:#333;
+  background-color: rgb(190, 255, 214);
+}
+.speech_wrapper button.active {
+  background-color: #333;
+  color: #fff;
+}
+.common_width {
+  width: 1300px;
+  margin: 0rem auto;
+}
+@media screen and (max-width: 1350px) {
+  .common_width {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header > div .brand_logo {
+    font-size: 22px;
+  }
+  header > div .brand_logo svg {
+    width: 22px;
+    margin-right: 5px;
+  }
+  header > div nav > * + * {
+    margin-left: 10px;
+  }
+  header > div ul {
+    position: absolute;
+    background-color: #fff;
+    left: 0px;
+    top: 0px;
+    flex-direction: column;
+    min-height: 100vh;
+    z-index: 9;
+    padding: 2rem;
+    width: 220px;
+    left: -100%;
+    transition: 0.3s ease all;
+  }
+  header > div ul.active {
+    left: 0px;
+  }
+  header > div ul > * + * {
+    margin-left: 0px;
+    margin-top: 2rem;
+  }
+  header ul li.active {
+    padding: 15px 20px;
+  }
+  .burger_menu {
+    display: block;
+  }
+  .burger_menu svg {
+    width: 30px;
+  }
+  footer .privacy-policy a {
+    font-size: 14px;
+  }
+}
+
+
